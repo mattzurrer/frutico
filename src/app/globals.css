@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Frutico color palette */
+  --hella-green-frutico-700: #186635;
+  --hella-green-frutico-600: #228C49;
+  --kinda-blue-lattico-500: #0068A1;
+  --kinda-blue-lattico-400: #108DD1;
+  --kinda-blue-lattico-300: #4DB1E8;
+  --shades-of-grey-solid-400: #D6D6D6;
+  --desktop-input-background: #FFF;
+  --desktop-text-default: rgba(0, 0, 0, 0.80);
+  --shades-of-white-700: rgba(255, 255, 255, 0.95);
+  --white: #FFF;
+}
+
+/* Global styles */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-noto-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Site-wide max-width container */
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Custom utilities */
+.font-montserrat {
+  font-family: var(--font-montserrat), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Navigation */
+a {
+  color: var(--kinda-blue-lattico-500);
+  text-decoration: underline;
+}
+.light-link a {
+  color: var(--white);
+  text-decoration: none;
+}
+.light-link a:hover {
+  text-decoration: underline;
+}
+a.nav-link {
+  color: var(--hella-green-frutico-600);
+  text-decoration: none;
+  font-weight: 600;
+}
+a.nav-link:hover,
+a.nav-link-active {
+  color: var(--hella-green-frutico-700);
+  text-decoration: none;
+  border-bottom: var(--hella-green-frutico-600) 4px solid;
+}
+
+/* Expandable animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
