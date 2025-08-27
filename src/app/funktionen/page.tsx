@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import FeatureSection from "@/components/FeatureSection";
+import Image from "next/image";
 
 export default function FunktionenPage() {
   return (
@@ -26,12 +27,31 @@ export default function FunktionenPage() {
                      </p>
 
                    </div>
-
-                   <div className="flex-1 flex justify-center items-center relative min-h-[400px] lg:min-h-[600px]">
-                     <div className="relative w-full max-w-[572px] h-[400px] lg:h-[600px]">
-
-                     </div>
-                   </div>
+                    <div className="flex-1 flex justify-center items-center relative min-h-[100px] lg:min-h-[200px]">
+                        <div className="relative w-full max-w-[572px] h-[200px] lg:h-[300px]">
+                          <Image
+                            src="img/Melone-ganz.svg"
+                            alt="Melon"
+                            width={350}
+                            height={438}
+                            className="absolute left-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-1"
+                          />
+                          <Image
+                            src="img/Kiwi-halb.svg"
+                            alt="Kiwi"
+                            width={350}
+                            height={438}
+                            className="absolute left-1/2 transform -translate-x-1/2 top-16 w-40 lg:w-80 h-auto z-5"
+                          />
+                          <Image
+                            src="img/Orange-halb.svg"
+                            alt="Orange"
+                            width={350}
+                            height={438}
+                            className="absolute right-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-10"
+                          />
+                      </div>
+                    </div>
                  </div>
                </section>
 
