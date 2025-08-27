@@ -30,21 +30,21 @@ export default function FunktionenPage() {
                     <div className="flex-1 flex justify-center items-center relative min-h-[100px] lg:min-h-[200px]">
                         <div className="relative w-full max-w-[572px] h-[200px] lg:h-[300px]">
                           <Image
-                            src="img/Melone-ganz.svg"
+                            src="img/Melone-ganz.png"
                             alt="Melon"
                             width={350}
                             height={438}
                             className="absolute left-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-1"
                           />
                           <Image
-                            src="img/Kiwi-halb.svg"
+                            src="img/Kiwi-halb.png"
                             alt="Kiwi"
                             width={350}
                             height={438}
                             className="absolute left-1/2 transform -translate-x-1/2 top-16 w-40 lg:w-80 h-auto z-5"
                           />
                           <Image
-                            src="img/Orange-halb.svg"
+                            src="img/Orange-halb.png"
                             alt="Orange"
                             width={350}
                             height={438}
