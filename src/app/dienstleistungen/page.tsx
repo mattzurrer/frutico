@@ -4,6 +4,7 @@ import Waves from "@/components/Waves";
 import CTA from "@/components/CTA";
 import ServicesSection from "@/components/ServicesSection";
 import PageHeaderSection from "@/components/PageHeaderSection";
+import Brands from "@/components/Brands";
 
 export default function DienstleistungenPage() {
   return (
@@ -31,7 +32,7 @@ export default function DienstleistungenPage() {
                       className: "absolute left-1/2 transform -translate-x-1/2 top-16 w-40 lg:w-80 h-auto z-5",
                     },
                     {
-                      src: "/img/apple-half.png",
+                      src: "/img/applehalf.png",
                       alt: "Apple",
                       width: 350,
                       height: 438,
@@ -39,10 +40,9 @@ export default function DienstleistungenPage() {
                     },
                   ]}
                 />
-        </div>
-        <div className="main-container relative">
-        <Waves />
-        <CTA />
+      </div>
+      <Waves />
+      <div className="main-container">
         <section className="px-6 lg:px-27 py-12 lg:py-20">
           <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-24 max-w-7xl mx-auto">
             <div className="flex flex-col gap-8 flex-1">
@@ -87,6 +87,8 @@ export default function DienstleistungenPage() {
         </section>
         <ServicesSection />
       </div>
+      <CTA />
+      <Brands />
       <Footer />
     </div>
   );
