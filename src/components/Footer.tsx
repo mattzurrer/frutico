@@ -6,7 +6,7 @@ interface FooterProps {
 
 export default function Footer({ className = "" }: FooterProps) {
   return (
-    <footer className="relative py-8 bg-[url('/img/footer-waves.svg')] bg-cover bg-center bg-no-repeat">
+    <footer className="relative py-8 bg-[url('/img/footerwaves.svg')] bg-cover bg-center bg-no-repeat">
       <div className="main-container px-6 lg:px-16">
       {/* Background overlay */}
       <div className="absolute inset-0 opacity-20" />
@@ -138,7 +138,7 @@ function InstagramIcon() {
 function SwissFlag() {
   return (
     <Image
-      src="img/swiss-flag.svg"
+      src="img/swissflag.svg"
       alt="Swiss Flag, it's a big plus"
       width={20}
       height={20}
