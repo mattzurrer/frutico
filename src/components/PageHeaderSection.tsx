@@ -49,8 +49,9 @@ export default function PageHeaderSection({
         </div>
         <div className={imageColumnClassName}>
           <div className={imageFrameClassName}>
-            {images.map((img) => (
+            {images.map((img, idx) => (
               <Image
+                key={`${img.src}-${idx}`}
                 src={img.src}
                 alt={img.alt}
                 width={img.width}
