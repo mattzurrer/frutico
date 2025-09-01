@@ -68,7 +68,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Produktion"
-              imageUrl="/img/Verkauf.svg"
+              imageUrl="/img/Produktion.svg"
               imagePosition="right"
               features={[
                 {
