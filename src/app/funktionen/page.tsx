@@ -2,7 +2,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import FeatureSection from "@/components/FeatureSection";
+import PageHeaderSection from "@/components/PageHeaderSection";
 import Image from "next/image";
+import Brands from "@/components/Brands";
 
 export default function FunktionenPage() {
   return (
@@ -10,50 +12,34 @@ export default function FunktionenPage() {
          {/* Navigation */}
          <Navigation />
          <div className="main-container">
-               <section className="px-6 lg:px-27 py-6 lg:py-20">
-                 <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
-                   <div className="flex-1 max-w-2xl">
-                     <h1 className="font-montserrat text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-black mb-10 tracking-tight">
-                       Funktionen und Module
-                     </h1>
-
-                     {/* Subtitle */}
-                    <h2 className="text-black mb-8 font-noto-sans text-xl md:text-2xl lg:text-3xl font-bold leading-tight max-w-md">
-                        Alles im Griff – mit den richtigen Werkzeugen
-                    </h2>
-
-                     <p className="text-base text-black mb-10 leading-6">
-                       frutico bietet Ihnen alle Funktionen, die Sie für den erfolgreichen Betrieb in der Früchte- und Gemüsebranche brauchen – klar strukturiert, einfach zu bedienen und vollständig digital. Vom Einkauf bis zur Auslieferung: Mit Frutico steuern Sie Ihre Prozesse effizient, zuverlässig und flexibel. Hier finden Sie einen Überblick über alle Kernmodule.
-                     </p>
-
-                   </div>
-                    <div className="flex-1 flex justify-center items-center relative min-h-[100px] lg:min-h-[200px]">
-                        <div className="relative w-full max-w-[572px] h-[200px] lg:h-[300px]">
-                          <Image
-                            src="/img/Melone-ganz.png"
-                            alt="Melon"
-                            width={350}
-                            height={438}
-                            className="absolute left-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-1"
-                          />
-                          <Image
-                            src="/img/Kiwi-halb.png"
-                            alt="Kiwi"
-                            width={350}
-                            height={438}
-                            className="absolute left-1/2 transform -translate-x-1/2 top-16 w-40 lg:w-80 h-auto z-5"
-                          />
-                          <Image
-                            src="/img/Orange-halb.png"
-                            alt="Orange"
-                            width={350}
-                            height={438}
-                            className="absolute right-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-10"
-                          />
-                      </div>
-                    </div>
-                 </div>
-               </section>
+               <PageHeaderSection
+                 title="Funktionen und Module"
+                 subtitle="Alles im Griff – mit den richtigen Werkzeugen"
+                 description="frutico bietet Ihnen alle Funktionen, die Sie für den erfolgreichen Betrieb in der Früchte- und Gemüsebranche brauchen – klar strukturiert, einfach zu bedienen und vollständig digital. Vom Einkauf bis zur Auslieferung: Mit Frutico steuern Sie Ihre Prozesse effizient, zuverlässig und flexibel. Hier finden Sie einen Überblick über alle Kernmodule."
+                 images={[
+                   {
+                     src: "/img/Melone-ganz.png",
+                     alt: "Melon",
+                     width: 350,
+                     height: 438,
+                     className: "absolute left-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-1",
+                   },
+                   {
+                     src: "/img/Kiwi-halb.png",
+                     alt: "Kiwi",
+                     width: 350,
+                     height: 438,
+                     className: "absolute left-1/2 transform -translate-x-1/2 top-16 w-40 lg:w-80 h-auto z-5",
+                   },
+                   {
+                     src: "/img/Orange-halb.png",
+                     alt: "Orange",
+                     width: 350,
+                     height: 438,
+                     className: "absolute right-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-10",
+                   },
+                 ]}
+               />
 
 
         {/* Features Section */}
@@ -202,8 +188,9 @@ export default function FunktionenPage() {
 
           </div>
         </section>
-        <CTA />
       </div>
+      <CTA />
+      <Brands />
       <Footer />
     </div>
   );
