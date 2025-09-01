@@ -79,7 +79,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <FeatureCard
-            image="img/Digitalisierung.svg"
+            image="/images/digitalisierung.svg"
             title="Vollständige Digitalisierung"
             features={[
               {
@@ -98,7 +98,7 @@ export default function Home() {
           />
           
           <FeatureCard
-            image="img/Logistik.svg"
+            image="/images/logistik.svg"
             title="Effiziente Logistik und Qualitätssicherung"
             features={[
               {
@@ -117,7 +117,7 @@ export default function Home() {
           />
           
           <FeatureCard
-            image="/img/Cloud.svg"
+            image="/images/cloud.svg"
             title="Flexibilität, Skalierbarkeit und Umsatzsteigerung"
             features={[
               {
@@ -154,7 +154,7 @@ export default function Home() {
           </div>
           <div className="flex-1 max-w-lg">
             <Image
-              src="img/Herausforderungen.svg"
+              src="/images/herausforderungen.svg"
               alt="Herausforderungen"
               width={505}
               height={290}

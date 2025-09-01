@@ -22,7 +22,7 @@ export default function VideoSection({ videoId, className = '' }: VideoSectionPr
           <div className="relative w-full h-full bg-black rounded-lg overflow-hidden cursor-pointer group" onClick={handlePlay}>
             {/* Custom thumbnail image */}
             <img
-              src="/img/marcel-weder.png"
+              src="/images/marcelweder.png"
               alt="Video thumbnail"
               className="w-full h-full object-cover"
             />

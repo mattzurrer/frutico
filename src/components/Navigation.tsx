@@ -22,7 +22,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
       <div className="flex items-center">
         <Link href="/">
           <Image
-            src="img/frutico-logo.svg"
+            src="/images/frutico-logo.svg"
             alt="frutico logo"
             width={162}
             height={40}

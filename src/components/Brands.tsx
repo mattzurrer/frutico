@@ -25,31 +25,31 @@ export default function Brands({ className = "" }: BrandsProps) {
       
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
         <BrandLogo
-          src="/img/frutico-logo.svg"
+          src="/images/frutico-logo.svg"
           alt="frutico"
           name="frutico"
           url="https:frutico.ch"
         />
         <BrandLogo
-          src="/img/logo/crustico-logo.svg"
+          src="/images/logo/crustico-logo.svg"
           alt="crustico"
           name="crustico"
           url="https://crustico.ch"
         />
         <BrandLogo
-          src="/img/logo/fontico-logo.svg"
+          src="/images/logo/fontico-logo.svg"
           alt="fontico"
           name="fontico"
           url="https://fontico.ch"
         />
         <BrandLogo
-          src="/img/logo/meatico-logo.svg"
+          src="/images/logo/meatico-logo.svg"
           alt="meatico"
           name="meatico"
           url="https://meatico.ch"
         />
         <BrandLogo
-          src="/img/logo/lattico-logo.svg"
+          src="/images/logo/lattico-logo.svg"
           alt="lattico"
           name="lattico"
           url="https://lattico.app"

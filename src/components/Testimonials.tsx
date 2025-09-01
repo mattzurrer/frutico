@@ -38,7 +38,7 @@ const JeunePrimeurLogo = () => (
   <div className="flex items-center gap-2.5">
     <div className="w-[30px] h-12 bg-[#00A24F] rounded-full flex items-center justify-center relative">
       <Image
-        src="/img/jeune-primeur-logo.png"
+        src="/images/jeune-primeur-logo.png"
         alt="Jeune Primeur"
         width={49}
         height={49}
@@ -53,7 +53,7 @@ const TentiLogo = () => (
   <div className="flex items-center gap-2.5">
     <div className="w-12 h-12 bg-[#007A44] rounded-full flex items-center justify-center relative">
       <Image
-        src="/img/tenti-logo.png"
+        src="/images/tenti-logo.png"
         alt="Tenti"
         width={39}
         height={16}
@@ -110,7 +110,7 @@ export default function Testimonials() {
       quote: '"Frutico versteht und löst die Herausforderungen der Früchte- und Gemüse-Branche wie kein anderes EDV-System."',
       author: 'Marcel Weder',
       company: 'Geschäftsführer Owiamo GmbH und CC Markthalle GmbH',
-      image: '/img/marcel-weder.png',
+      image: '/images/marcelweder.png',
       logo: { type: 'owiamo' as const },
       imagePosition: 'right' as const,
     },
@@ -118,7 +118,7 @@ export default function Testimonials() {
       quote: '«Wir wollen mit Frutico wachsen – vor allem schneller als unsere Konkurrenz. Und wir wollen die Betriebsprozesse fehlerfrei abwickeln.»',
       author: 'Beat Beerli',
       company: 'Geschäftsführer Querbeet Bio-Handels GmbH',
-      image: '/img/beatbeerli.png',
+      image: '/images/beatbeerli.png',
       logo: { type: 'owiamo' as const },
       imagePosition: 'left' as const,
     },
@@ -126,7 +126,7 @@ export default function Testimonials() {
       quote: '«Mit Frutico haben wir ein vollintegriertes Betriebssystem, mit dem wir die Produktion steuern und unsere Prozesse optimieren.»',
       author: 'Martin Wyss',
       company: 'Geschäftsführer Jeune Primeur AG',
-      image: '/img/martin-wyss.png',
+      image: '/images/martinwyss.png',
       logo: { type: 'jeune-primeur' as const },
       imagePosition: 'right' as const,
     },
@@ -134,7 +134,7 @@ export default function Testimonials() {
       quote: '«Frutico nutzt die aktuellste Technologie. Es ist die Zukunft der Früchte- und Gemüsebranche.»',
       author: 'Rolf Spiller',
       company: 'Geschäftsführer Tenti AG',
-      image: '/img/rolf-spiller.png',
+      image: '/images/rolfspiller.png',
       logo: { type: 'tenti' as const },
       imagePosition: 'left' as const,
     },

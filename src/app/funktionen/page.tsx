@@ -17,21 +17,21 @@ export default function FunktionenPage() {
                  description="frutico bietet Ihnen alle Funktionen, die Sie für den erfolgreichen Betrieb in der Früchte- und Gemüsebranche brauchen – klar strukturiert, einfach zu bedienen und vollständig digital. Vom Einkauf bis zur Auslieferung: Mit Frutico steuern Sie Ihre Prozesse effizient, zuverlässig und flexibel. Hier finden Sie einen Überblick über alle Kernmodule."
                  images={[
                    {
-                     src: "/img/meloneganz.png",
+                     src: "/images/meloneganz.png",
                      alt: "Melon",
                      width: 350,
                      height: 438,
                      className: "absolute left-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-1",
                    },
                    {
-                     src: "/img/kiwihalb.png",
+                     src: "/images/kiwihalb.png",
                      alt: "Kiwi",
                      width: 350,
                      height: 438,
                      className: "absolute left-1/2 transform -translate-x-1/2 top-16 w-40 lg:w-80 h-auto z-5",
                    },
                    {
-                     src: "/img/orangehalb.png",
+                     src: "/images/orangehalb.png",
                      alt: "Orange",
                      width: 350,
                      height: 438,
@@ -47,7 +47,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Einkauf"
-              imageUrl="/img/Einkauf.svg"
+              imageUrl="/images/einkauf.svg"
               imagePosition="left"
               features={[
                 {
@@ -67,7 +67,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Produktion"
-              imageUrl="/img/Produktion.svg"
+              imageUrl="/images/produktion.svg"
               imagePosition="right"
               features={[
                 {
@@ -87,7 +87,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Lagerverwaltung"
-              imageUrl="/img/Lagerverwaltung.svg"
+              imageUrl="/images/lagerverwaltung.svg"
               imagePosition="left"
               features={[
                 {
@@ -107,7 +107,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Logistik und Transport"
-              imageUrl="/img/Logistik.png"
+              imageUrl="/images/logistik.png"
               imagePosition="right"
               features={[
                 {
@@ -127,7 +127,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Verkauf"
-              imageUrl="/img/Verkauf.svg"
+              imageUrl="/images/verkauf.svg"
               imagePosition="left"
               features={[
                 {
@@ -147,7 +147,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Rückverfolgbarkeit und Qualitätssicherung"
-              imageUrl="/img/QS.svg"
+              imageUrl="/images/qs.svg"
               imagePosition="right"
               features={[
                 {
@@ -167,7 +167,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Reporting und Analyse"
-              imageUrl="/img/Reporting.svg"
+              imageUrl="/images/reporting.svg"
               imagePosition="left"
               features={[
                 {

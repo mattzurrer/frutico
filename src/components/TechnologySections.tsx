@@ -142,7 +142,7 @@ export default function TechnologySections() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-10 max-w-7xl mx-auto">
           <div className="w-full lg:w-[508px] h-[286px] relative bg-[#4DB1E8] rounded flex items-center justify-center">
                     <Image
-                      src="/img/placeholder.png"
+                      src="/images/placeholder.png"
                       alt="frutico logo"
                       width={162}
                       height={40}

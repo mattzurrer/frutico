@@ -19,21 +19,21 @@ export default function TechnologiePage() {
 Ob Sie mit einem Standort starten oder wachsen – Frutico bleibt schlank, flexibel und leistungsfähig. Sie profitieren von maximaler Effizienz, minimalem IT-Aufwand und jederzeit aktuellem Funktionsumfang."
           images={[
             {
-              src: "/img/tomato.png",
+              src: "/images/tomato.png",
               alt: "Tomato",
               width: 350,
               height: 438,
               className: "absolute left-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-1",
             },
             {
-              src: "/img/pumpkin.png",
+              src: "/images/pumpkin.png",
               alt: "Pumpkin",
               width: 350,
               height: 438,
               className: "absolute left-1/2 transform -translate-x-1/2 top-16 w-40 lg:w-80 h-auto z-5",
             },
             {
-              src: "/img/apple-half.png",
+              src: "/images/applehalf.png",
               alt: "Apple",
               width: 350,
               height: 438,
