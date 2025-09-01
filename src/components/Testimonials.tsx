@@ -118,7 +118,7 @@ export default function Testimonials() {
       quote: '«Wir wollen mit Frutico wachsen – vor allem schneller als unsere Konkurrenz. Und wir wollen die Betriebsprozesse fehlerfrei abwickeln.»',
       author: 'Beat Beerli',
       company: 'Geschäftsführer Querbeet Bio-Handels GmbH',
-      image: '/img/beat-beerli.png',
+      image: '/img/beatbeerli.png',
       logo: { type: 'owiamo' as const },
       imagePosition: 'left' as const,
     },
