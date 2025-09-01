@@ -107,7 +107,7 @@ export default function FunktionenPage() {
 
             <FeatureSection
               title="Logistik und Transport"
-              imageUrl="/images/logistik.png"
+              imageUrl="/images/logistik.svg"
               imagePosition="right"
               features={[
                 {
