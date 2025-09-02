@@ -17,21 +17,21 @@ export default function FunktionenPage() {
                  description="frutico bietet Ihnen alle Funktionen, die Sie für den erfolgreichen Betrieb in der Früchte- und Gemüsebranche brauchen – klar strukturiert, einfach zu bedienen und vollständig digital. Vom Einkauf bis zur Auslieferung: Mit Frutico steuern Sie Ihre Prozesse effizient, zuverlässig und flexibel. Hier finden Sie einen Überblick über alle Kernmodule."
                  images={[
                    {
-                     src: "/images/meloneganz.jpg",
+                     src: "/images/melone.png",
                      alt: "Melon",
                      width: 350,
                      height: 438,
                      className: "absolute left-0 top-8 lg:top-16 w-40 lg:w-80 h-auto z-1",
                    },
                    {
-                     src: "/images/kiwihalb.png",
+                     src: "/images/kiwi-halb.png",
                      alt: "Kiwi",
                      width: 350,
                      height: 438,
                      className: "absolute left-1/2 transform -translate-x-1/2 top-16 w-40 lg:w-80 h-auto z-5",
                    },
                    {
-                     src: "/images/orangehalb.png",
+                     src: "/images/orange-halb.png",
                      alt: "Orange",
                      width: 350,
                      height: 438,

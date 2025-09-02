@@ -20,11 +20,11 @@ export default function CTA({ className = "" }: CallToActionProps) {
           
           <div className="flex items-center gap-4">
             <Image
-              src="/images/meloneganz.png"
+              src="/images/bernadette.png"
               alt="Bernadette Hug"
               width={165}
               height={165}
-              className="rounded-full w-32 h-32 lg:w-40 lg:h-40"
+              className="rounded-full w-32 h-32 lg:w-60 lg:h-60"
             />
             <div className="flex flex-col items-center gap-2">
               <button className="bg-white/95 text-[#228C49] px-6 py-4 rounded-full font-semibold text-base shadow-lg hover:shadow-xl transition-shadow">

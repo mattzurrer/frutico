@@ -39,21 +39,21 @@ export default function Home() {
           <div className="flex-1 flex justify-center items-center relative min-h-[400px] lg:min-h-[600px]">
             <div className="relative w-full max-w-[572px] h-[400px] lg:h-[600px]">
               <Image
-                src="/images/meloneganz.png"
+                src="/images/melone.png"
                 alt="Melon"
                 width={251}
                 height={249}
                 className="absolute left-0 top-8 lg:top-16 w-32 lg:w-60 h-auto"
               />
               <Image
-                  src="/images/meloneganz.png"
+                  src="/images/orange.png"
                 alt="Orange"
                 width={350}
                 height={438}
                 className="absolute left-1/2 transform -translate-x-1/2 top-0 w-40 lg:w-80 h-auto z-10"
               />
               <Image
-                  src="/images/meloneganz.png"
+                  src="/images/tomate.png"
                 alt="Tomato"
                 width={251}
                 height={249}

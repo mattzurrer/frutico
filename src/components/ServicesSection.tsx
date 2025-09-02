@@ -28,7 +28,7 @@ export default function ServicesSection() {
                 <div className="flex flex-col gap-5">
                   <div className="relative w-full h-[249px] rounded overflow-hidden">
                     <Image
-                      src="https://cdn.builder.io/api/v1/image/assets%2F260a15db1dba4218a4e48a4dc8f6d15c%2F680dcad893a043b2bf90c2895aa1e0a4?format=webp&width=800"
+                      src="/images/orange.png"
                       alt="Process analysis step 1"
                       fill
                       className="object-cover"
@@ -44,7 +44,7 @@ export default function ServicesSection() {
                 <div className="flex flex-col gap-5">
                   <div className="relative w-full h-[249px] rounded overflow-hidden">
                     <Image
-                      src="https://cdn.builder.io/o/assets%2F260a15db1dba4218a4e48a4dc8f6d15c%2F261e08b188a74baa8800153abcff9341?alt=media&token=cbef62fc-4afe-455b-a53b-a61f7c042ebe&apiKey=260a15db1dba4218a4e48a4dc8f6d15c"
+                      src="/images/orange.png"
                       alt="Process analysis step 2"
                       fill
                       className="object-cover"
