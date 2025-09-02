@@ -39,21 +39,21 @@ export default function Home() {
           <div className="flex-1 flex justify-center items-center relative min-h-[400px] lg:min-h-[600px]">
             <div className="relative w-full max-w-[572px] h-[400px] lg:h-[600px]">
               <Image
-                src="https://api.builder.io/api/v1/image/assets/TEMP/e6723a7b570dc07a3cbc52fb5baf9b89dd7d591d?width=502"
+                src="/images/meloneganz.png"
                 alt="Melon"
                 width={251}
                 height={249}
                 className="absolute left-0 top-8 lg:top-16 w-32 lg:w-60 h-auto"
               />
               <Image
-                src="https://api.builder.io/api/v1/image/assets/TEMP/79e201f848550d273e1f27f8418eae0ffd6865b1?width=700"
+                  src="/images/meloneganz.png"
                 alt="Orange"
                 width={350}
                 height={438}
                 className="absolute left-1/2 transform -translate-x-1/2 top-0 w-40 lg:w-80 h-auto z-10"
               />
               <Image
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c9f061a37cfccfaf76e8db5ee82d8f954c00c9f6?width=502"
+                  src="/images/meloneganz.png"
                 alt="Tomato"
                 width={251}
                 height={249}
@@ -268,7 +268,7 @@ function ReferenceCard({
     <div className="flex flex-col gap-6">
       <div className="h-[221px] bg-[#4DB1E8] rounded-lg flex items-center justify-center">
         <Image
-          src="https://api.builder.io/api/v1/image/assets/TEMP/a2691f944de9972943c5046b1ad2832eebe185dc?width=300"
+          src="/images/meloneganz.png"
           alt="Placeholder"
           width={150}
           height={150}

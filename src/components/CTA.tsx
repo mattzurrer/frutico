@@ -20,7 +20,7 @@ export default function CTA({ className = "" }: CallToActionProps) {
           
           <div className="flex items-center gap-4">
             <Image
-              src="https://api.builder.io/api/v1/image/assets/TEMP/137a0dab1a41bc382ae6e3cec5726e3028822471?width=330"
+              src="/images/meloneganz.png"
               alt="Bernadette Hug"
               width={165}
               height={165}
