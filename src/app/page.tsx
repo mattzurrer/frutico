@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from 'next/link';
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Brands from "@/components/Brands";
@@ -70,8 +71,8 @@ export default function Home() {
 
       {/* Why frutico Section */}
       <div className="main-container">
-        <section className="px-6 lg:px-27 py-16">
-        <div className="mb-16">
+        <section className="px-6 lg:px-27 py-8">
+        <div className="mb-8">
           <h2 className="text-3xl font-bold text-black mb-10 leading-tight">
             Warum frutico?
           </h2>
@@ -165,23 +166,28 @@ export default function Home() {
         </section>
       </div>
 
-      {/* References Section */}
+      {/* Subpages Section */}
       <div className="main-container">
         <section className="px-6 lg:px-27 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <ReferenceCard
+          <SubpagesCard
             title="Referenzen"
             description="frutico hilft bereits zahlreichen Unternehmen in der Früchte- und Gemüsebranche, ihre Prozesse zu optimieren und ihre Effizienz zu steigern."
             linkText="Das sagen unsere Kunden"
+            linkURL="/referenzen"
             linkColor="text-[#108DD1]"
           />
-          <ReferenceCard
+          <SubpagesCard
             title="Module & Funktionen"
             description="Erfahren Sie mehr über die vielfältigen Module und Funktionen von frutico, die alle Ihre Geschäftsprozesse abdecken"
+            linkText="Alle Funktionen und Module"
+            linkURL="/funktionen"
           />
-          <ReferenceCard
+          <SubpagesCard
             title="Technologie"
             description="Entdecken Sie die innovative Technologie, die frutico zu einer der fortschrittlichsten Cloud-ERP-Lösungen macht."
+            linkText="Unsere Technologie zu Ihrem Nutzen"
+            linkURL="/technologie"
           />
         </div>
         </section>
@@ -253,14 +259,16 @@ function ExpandableItem({ title, description }: { title: string; description: st
   );
 }
 
-function ReferenceCard({ 
+function SubpagesCard({ 
   title, 
   description, 
-  linkText, 
+  linkText,
+  linkURL,
   linkColor = "text-black" 
 }: { 
   title: string; 
-  description: string; 
+  description: string;
+  linkURL: string;
   linkText?: string;
   linkColor?: string;
 }) {
@@ -268,7 +276,7 @@ function ReferenceCard({
     <div className="flex flex-col gap-6">
       <div className="h-[221px] bg-[#4DB1E8] rounded-lg flex items-center justify-center">
         <Image
-          src="/images/meloneganz.png"
+          src="/images/herausforderungen.svg"
           alt="Placeholder"
           width={150}
           height={150}
@@ -278,13 +286,17 @@ function ReferenceCard({
       <div className="space-y-6">
         <h3 className="text-xl font-bold text-black leading-8">{title}</h3>
         <div className="text-base leading-6">
-          <span className="text-black">{description}</span>
-          {linkText && (
-            <>
-              <br /><br />
-              <span className={linkColor}>{linkText}</span>
-            </>
-          )}
+          <p className="text-black">{description}</p>
+          <p className="mt-4">
+          <Link
+            href={{
+              pathname: linkURL,
+              query: { name: 'test' },
+            }}
+          >
+            { linkText }
+            </Link>
+            </p>
         </div>
       </div>
     </div>
@@ -314,30 +326,6 @@ function MinusIcon() {
     <svg className="w-6 h-6 text-black/80" fill="currentColor" viewBox="0 0 24 24">
       <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
       <path d="M8 12h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    </svg>
-  );
-}
-
-function PhoneIcon() {
-  return (
-    <svg className="w-4 h-4 fill-white" viewBox="0 0 14 15">
-      <path d="M10.2539 8.10841L13.3164 9.42091C13.8086 9.61232 14.082 10.1318 13.9727 10.6514L13.3164 13.7139C13.207 14.2061 12.7422 14.5889 12.25 14.5889C12.0586 14.5889 11.8945 14.5615 11.7305 14.5615C11.457 14.5615 11.1836 14.5342 10.9375 14.5068C4.78516 13.8506 0 8.65529 0 2.31154C0 1.81935 0.355469 1.35451 0.847656 1.24513L3.91016 0.588881C4.42969 0.479506 4.94922 0.752943 5.14062 1.24513L6.45312 4.30763C6.64453 4.74513 6.53516 5.26466 6.15234 5.56544L5.03125 6.49513C5.76953 7.75294 6.80859 8.79201 8.06641 9.53029L8.99609 8.40919C9.29688 8.02638 9.81641 7.91701 10.2539 8.10841ZM12.0586 13.249L12.6328 10.542L9.89844 9.36622L9.10547 10.3506C8.69531 10.8428 7.98438 10.9795 7.41016 10.6514C5.96094 9.80372 4.75781 8.6006 3.91016 7.15138C3.58203 6.57716 3.71875 5.86622 4.21094 5.45607L5.19531 4.6631L4.01953 1.92872L1.3125 2.50294C1.39453 8.40919 6.15234 13.167 12.0586 13.249Z" />
-    </svg>
-  );
-}
-
-function EmailIcon() {
-  return (
-    <svg className="w-4 h-4 fill-white" viewBox="0 0 14 11">
-      <path d="M1.75 1.6394C1.50391 1.6394 1.3125 1.85815 1.3125 2.0769V2.70581L6.01562 6.56128C6.58984 7.02612 7.38281 7.02612 7.95703 6.56128L12.6875 2.70581V2.0769C12.6875 1.85815 12.4688 1.6394 12.25 1.6394H1.75ZM1.3125 4.40112V9.0769C1.3125 9.323 1.50391 9.5144 1.75 9.5144H12.25C12.4688 9.5144 12.6875 9.323 12.6875 9.0769V4.40112L8.80469 7.573C7.73828 8.448 6.23438 8.448 5.19531 7.573L1.3125 4.40112ZM0 2.0769C0 1.11987 0.765625 0.326904 1.75 0.326904H12.25C13.207 0.326904 14 1.11987 14 2.0769V9.0769C14 10.0613 13.207 10.8269 12.25 10.8269H1.75C0.765625 10.8269 0 10.0613 0 9.0769V2.0769Z" />
-    </svg>
-  );
-}
-
-function ArrowIcon() {
-  return (
-    <svg className="w-4 h-4 fill-[#0068A1]" viewBox="0 0 16 14">
-      <path d="M15.708 7.4292L9.52051 13.6167C9.30957 13.8276 8.92285 13.8276 8.71191 13.6167C8.50098 13.4058 8.50098 13.019 8.71191 12.8081L13.9502 7.56982H0.696289C0.379883 7.56982 0.133789 7.32373 0.133789 7.00732C0.133789 6.72607 0.379883 6.44482 0.696289 6.44482H13.9502L8.71191 1.2417C8.50098 1.03076 8.50098 0.644043 8.71191 0.433105C8.92285 0.222168 9.30957 0.222168 9.52051 0.433105L15.708 6.62061C15.9189 6.83154 15.9189 7.21826 15.708 7.4292Z" />
     </svg>
   );
 }
