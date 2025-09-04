@@ -53,12 +53,13 @@ a.nav-link {
   color: var(--hella-green-frutico-600);
   text-decoration: none;
   font-weight: 600;
+  box-shadow: inset 0 -4px 0 transparent;
 }
 a.nav-link:hover,
 a.nav-link-active {
   color: var(--hella-green-frutico-700);
   text-decoration: none;
-  border-bottom: var(--hella-green-frutico-600) 4px solid;
+  box-shadow: inset 0 -4px 0 var(--hella-green-frutico-600);
 }
 
 /* Expandable animation */

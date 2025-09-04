@@ -21,7 +21,7 @@ export default function ReferenzenPage() {
             </div>
           </div>
         </section>
-        <main className="px-6 lg:px-16 py-16">
+        <main className="px-6 lg:px-27 py-8">
           <Testimonials />
         </main>
       </div>

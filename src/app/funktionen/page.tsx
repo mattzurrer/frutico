@@ -42,7 +42,7 @@ export default function FunktionenPage() {
 
 
         {/* Features Section */}
-        <section className="px-6 lg:px-16 py-16">
+        <section className="px-6 lg:px-27 py-8">
           <div className="max-w-7xl mx-auto space-y-20">
 
             <FeatureSection

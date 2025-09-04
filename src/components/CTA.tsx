@@ -6,7 +6,7 @@ interface CallToActionProps {
 
 export default function CTA({ className = "" }: CallToActionProps) {
   return (
-      <section className="bg-[#228C49] py-8 shadow-xl">
+      <section className="bg-[#228C49] shadow-xl">
         <div className="main-container px-6 lg:px-27">
         <div className="flex flex-col lg:flex-row items-center justify-end gap-10">
           <div className="flex flex-col items-end text-right text-white/95">

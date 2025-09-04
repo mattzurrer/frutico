@@ -263,8 +263,7 @@ function SubpagesCard({
   title, 
   description, 
   linkText,
-  linkURL,
-  linkColor = "text-black" 
+  linkURL
 }: { 
   title: string; 
   description: string;
@@ -291,7 +290,7 @@ function SubpagesCard({
           <Link
             href={{
               pathname: linkURL,
-              query: { name: 'test' },
+              //query: { name: 'test' },
             }}
           >
             { linkText }
